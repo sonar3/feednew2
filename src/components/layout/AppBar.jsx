@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import NavAppBar from '../nav/NavAppBar';
-
+// 하단 앱바 영역
 export default function AppBar() {
     const [scrollDirection, setScrollDirection] = useState('appbar-up');
 	

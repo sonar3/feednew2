@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './NavAppBar.module.css'
 import { Link } from 'react-router-dom'
 // import MenuIframe from '../../pages/MenuIframe'
-
+// 하단 앱바 영역
 export default function NavAppBar() {
 	return (
 		<nav className={styles.appbar}>

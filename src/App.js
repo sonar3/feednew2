@@ -7,7 +7,7 @@ import { DataProvider } from './context/DataContext';
 
 import Root from './components/layout/Root';
 import FeedAll from './pages/FeedAll';
-import FeedView from './pages/FeedView';
+// import FeedView from './pages/FeedView';
 import FeedViewDetail from './pages/FeedViewDetail';
 import MenuIframe from './pages/MenuIframe';
 
@@ -17,6 +17,7 @@ export default function App() {
 	const feedLimit = 10;
 	const [apiUrl, setApiUrl] = useState(apiConfig["cateAll"]);
 
+	// api 받아오기
 	const fetchData = async (page) => {
 		try {
 			const response = await axios.get(`${apiUrl}?page=${page}&limit=${feedLimit}`);
@@ -27,6 +28,7 @@ export default function App() {
 		}
 	};
 
+	// 스크롤 내리면 데이터 받아오기 loadMore 실행
 	const loadMore = useCallback(() => {
 		fetchData(currentPage + 1)
 			.then((newData) => {
@@ -39,6 +41,7 @@ export default function App() {
 			});
 	}, [currentPage]);
 
+	// apiUrl 변경시 useEffect 실행
 	useEffect(() => {
 		fetchData(currentPage)
 			.then((initialData) => setData(initialData));
@@ -46,6 +49,7 @@ export default function App() {
 				console.log(apiUrl)
 	}, [apiUrl]);
 
+	// 라우터 설정
 	const router = createBrowserRouter([
 		{
 		  path: '/',
@@ -63,6 +67,7 @@ export default function App() {
 		},
 	  ]);
 
+	  // 라우터 실행 context-api 적용
 	  return (
 		<DataProvider value={{ data, setApiUrl, apiConfig }}>
 		  <RouterProvider router={router} />

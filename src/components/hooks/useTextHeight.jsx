@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-
+// 피드 더보기 버튼 커스텀 훅
 const useTextHeight = () => {
     const ref = useRef(null);
     const [height, setHeight] = useState(0);

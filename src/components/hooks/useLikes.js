@@ -1,6 +1,6 @@
 import { useState } from 'react';
 // import axios from 'axios';
-
+// 피드 좋아요
 export function useLikes() {
 	const [isLikes, setIsLikes] = useState(false);
 

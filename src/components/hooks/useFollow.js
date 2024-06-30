@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
-
+// 팔로우 기능
 export function useFollow(initialState = false, followMbId, mbId) {
 	const [isFollowing, setIsFollowing] = useState(initialState);
 

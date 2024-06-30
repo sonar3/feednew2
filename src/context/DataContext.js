@@ -1,5 +1,5 @@
 import React, { createContext, useContext } from 'react';
-
+// 전역 상태 관리 컨텍스트
 const DataContext = createContext();
 
 export const DataProvider = ({ children, value }) => {

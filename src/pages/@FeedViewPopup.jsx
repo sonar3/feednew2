@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-
+// 피드 상세 페이지 팝업
 export default function FeedViewPopup() {
   const navigate = useNavigate();
 

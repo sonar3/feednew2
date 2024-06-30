@@ -6,7 +6,7 @@ import FeedItemContainer from '../feedItem/FeedItemContainer'
 export default function List({data, loadMore}) {
 
 	const scrollRef = useRef();
-	
+	// Virtuoso 피드 리스트 컴포넌트 wrapper
 	return (
 		<Virtuoso
 			style={{ maxWidth: "480px", height: "100dvh", margin: "0 auto" }}

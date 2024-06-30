@@ -7,6 +7,7 @@ import FeedItemReply from './FeedItemReply'
 import styles from '../../assets/styles/common.module.css'
 import { useLikes } from '../hooks/useLikes'
 
+// 피드 바디 영역
 export default function FeedItemBody({feedIndex, feedData}) {
 	const [isLikes, toggleLikes,handleDoubleClick] = useLikes("true");
 

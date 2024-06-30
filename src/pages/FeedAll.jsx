@@ -1,7 +1,7 @@
 import React from 'react';
 import { useData } from '../context/DataContext';
 
-
+// 피드 첫페이지 영역
 import List from '../components/feed/FeedListWrap';
 // import { useData } from '../../src/context/DataContext';
 

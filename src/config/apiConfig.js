@@ -1,4 +1,4 @@
-
+// 헤더 상단 카테고리 선택시 변경되는 api 주소
 const apiConfig = {
     cateAll: 'https://gist.githubusercontent.com/sonar3/4487ffc52ada180736ebb94371677bbb/raw/903725ccc91f94cb948acb4814be5776c551f2ff/jsonTest4',
     cateFollow: 'https://gist.githubusercontent.com/sonar3/4487ffc52ada180736ebb94371677bbb/raw/6f29d4a520030022cd6eda9cd2f912474d9d6040/jsonTest2',

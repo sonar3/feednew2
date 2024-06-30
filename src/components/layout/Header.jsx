@@ -6,7 +6,7 @@ import styles from '../header/Header.module.css'
 
 import { Link, useLocation } from 'react-router-dom';
 
-
+// 피드 페이지 헤더 영역
 const DataContext = createContext();
 
 export const DataProvider = ({ children, value }) => {

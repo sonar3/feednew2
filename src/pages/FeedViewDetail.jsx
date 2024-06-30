@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import FeedItemBody from '../components/feedItem/FeedItemBody';
 import FeedItemHeader from '../components/feedItem/FeedItemHeader';
-
+// 피드 상세 페이지
 export default function FeedViewDetail ({ isOpen,feedId,isViewPop,closePopup }) {
 	const [feedData, setFeedData] = useState(null);
 	

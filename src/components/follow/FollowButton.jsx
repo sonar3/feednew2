@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './FollowButton.module.css'
-
+// 피드 팔로우 버튼 - useFollow 커스텀 훅 사용
 export default function FollowButton({ isFollowing, toggleFollow }) {
 	
 	return (

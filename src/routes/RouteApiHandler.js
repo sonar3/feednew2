@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import apiConfig from '../config/apiConfig';
 
+// 라우터 경로 API URL을 설정 - ui렌더링 안됨
 const RouteApiHandler = ({ setApiUrl }) => {
   const location = useLocation();
   

@@ -3,7 +3,7 @@ import styles from './HeaderSearch.module.css'
 
 import icoBasket from '../../assets/images/ico_basket.svg';
 import icoSearch from '../../assets/images/ico_search.svg';
-
+// 헤더 검색 영역
 export default function HeaderSearch() {
 	const [searchText, setSearchText] = useState('');
 

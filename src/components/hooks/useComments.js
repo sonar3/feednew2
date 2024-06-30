@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import { API_BASE_URL } from '../config';
-
+// 댓글 기능 커스텀 훅
 export const useComments = (feedId) => {
   const [comments, setComments] = useState([]);
   const [error, setError] = useState(null);

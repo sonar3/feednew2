@@ -1,6 +1,6 @@
 // import { transform } from 'framer-motion';
 import { useState, useCallback } from 'react';
-
+// 상세 팝업 커스텀 훅
 export const usePopup = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [content, setContent] = useState(null);

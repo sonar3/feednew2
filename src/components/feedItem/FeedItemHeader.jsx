@@ -8,6 +8,7 @@ import FeedViewDetail from '../../pages/FeedViewDetail';
 
 import { motion } from "framer-motion";
 
+// 피드 헤더 영역
 export default function FeedItemHeader({feedData, isViewPop}) {
 
 	// console.log('hi'+feedData);
