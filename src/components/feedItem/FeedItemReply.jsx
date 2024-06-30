@@ -125,15 +125,23 @@ export default function FeedItemReply({ feedId }) {
 		
 		
 		const formdata = new FormData(commentData);
-		formdata.append("feed_id", commentData.feed_id);
-		formdata.append("mb_id", commentData.mb_id);
-		formdata.append("me_recv_mb_id", commentData.me_recv_mb_id);
-		formdata.append("grand_parent_id", commentData.grand_parent_id);
-		formdata.append("parent_id", commentData.parent_id);
-		formdata.append("rewrite_target_id", commentData.rewrite_target_id);	
+		// formdata.append("feed_id", commentData.feed_id);
+		// formdata.append("mb_id", commentData.mb_id);
+		// formdata.append("me_recv_mb_id", commentData.me_recv_mb_id);
+		// formdata.append("grand_parent_id", commentData.grand_parent_id);
+		// formdata.append("parent_id", commentData.parent_id);
+		// formdata.append("rewrite_target_id", commentData.rewrite_target_id);	
+		// formdata.append("comment_content", replyText);
+
+		formdata.append("feed_id", "commentData.feed_id");
+		formdata.append("mb_id", "commentData.mb_id");
+		formdata.append("me_recv_mb_id", "commentData.me_recv_mb_id");
+		formdata.append("grand_parent_id", "commentData.grand_parent_id");
+		formdata.append("parent_id", "commentData.parent_id");
+		formdata.append("rewrite_target_id", "commentData.rewrite_target_id");	
 		formdata.append("comment_content", replyText);
 
-		// console.log(comments.me_id)
+		console.log(comments.me_id)
 		
 		try {
 			await axios.post(`https://api.vastyle.co.kr/feed/create-comment`, formdata);
