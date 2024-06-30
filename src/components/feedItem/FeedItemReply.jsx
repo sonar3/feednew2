@@ -142,7 +142,7 @@ export default function FeedItemReply({ feedId }) {
 		formdata.append("rewrite_target_id", "commentData.rewrite_target_id");	
 		formdata.append("comment_content", "replyText");
 
-		console.log(comments.me_id)
+		// console.log(comments.me_id)
 		
 		try {
 			await axios.post(`https://api.vastyle.co.kr/feed/create-comment`, formdata);
