@@ -15,7 +15,7 @@ export default function App() {
 	const [data, setData] = useState([]);
 	const [currentPage, setCurrentPage] = useState(1);
 	const feedLimit = 10;
-	const [apiUrl, setApiUrl] = useState();
+	const [apiUrl, setApiUrl] = useState(apiConfig["cateAll"]);
 
 	const fetchData = async (page) => {
 		try {
