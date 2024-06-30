@@ -5,7 +5,6 @@ import { useState } from 'react';
 import useTextHeight from '../hooks/useTextHeight';
 
 import styles from './FeedItemContent.module.css'
-import icoLike from '../../assets/images/ico_like.svg';
 import icoReply from '../../assets/images/ico_reply.svg';
 import icoShare from '../../assets/images/ico_share.svg';
 

@@ -5,7 +5,7 @@ export function useLikes() {
 	const [isLikes, setIsLikes] = useState(false);
 
     const newLikesState = !isLikes;
-    const action = newLikesState ? 'likes' : 'unlikes';
+    // const action = newLikesState ? 'likes' : 'unlikes';
 	const toggleLikes = async () => {
 
 		// test mbid

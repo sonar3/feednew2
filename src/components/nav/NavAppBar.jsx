@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './NavAppBar.module.css'
 import { Link } from 'react-router-dom'
-import MenuIframe from '../../pages/MenuIframe'
+// import MenuIframe from '../../pages/MenuIframe'
 
 export default function NavAppBar() {
 	return (

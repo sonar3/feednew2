@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import styles from './FeedItemProduct.module.css'
 
-import icoLike from '../../assets/images/ico_like.svg';
 import icoStar from '../../assets/images/ico_star.svg';
 
 

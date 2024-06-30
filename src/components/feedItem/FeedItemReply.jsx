@@ -29,6 +29,8 @@ const ReplyItem = ({ comment, onModify, onDelete }) => {
 		onDelete(comment);
 	};
 
+
+
 	return (
 		<div className={styles.reply_list_item} data-key={comment.me_id}>
 			<div className={styles.reply_list_info}>
@@ -89,7 +91,14 @@ export default function FeedItemReply({ feedId }) {
 	const fetchReplyData = useCallback(async () => {
 		try {
 			const response = await axios.get(`https://api.vastyle.co.kr/feed/list-comment?feed_id=${feedId}`);
-			const commentData = response.data.data.comment;
+			// const commentData = response.data.data.comment;
+			const commentData = {
+				me_id: "comment.me_id",
+				feed_id: "comment.feed_id",
+				mb_id: "comment.mb_id",
+				me_recv_mb_id: "comment.me_recv_mb_id",
+				grand_parent_id: "comment.grand_parent_id",
+			}
 
 			const comments = Object.entries(commentData)
 			.filter(([key]) => key !== 'count')

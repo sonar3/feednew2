@@ -15,7 +15,7 @@ export default function Root( {setApiUrl,apiConfig, data } ) {
 	return (
 		<>
 			{location.pathname !== `/view/${feedId}` && <Header data={data}/>}
-			{location.pathname == `/view/${feedId}` && <div>상세헤더</div>}
+			{location.pathname === `/view/${feedId}` && <div>상세헤더</div>}
 			<RouteApiHandler setApiUrl={setApiUrl} />
 			<Outlet />
 			<AppBar />

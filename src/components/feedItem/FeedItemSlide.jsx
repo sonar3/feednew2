@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
@@ -7,11 +7,6 @@ import { motion } from "framer-motion";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import styles from './FeedItemSlide.module.css'
 import likesStyles from '../../assets/styles/Likes.module.css';
-
-
-
-import likes from '../../assets/images/ico_like.svg';
-import likesActive from '../../assets/images/ico_like_active.svg';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
